@@ -15,7 +15,10 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.{js,ts,vue}": "eslint --cache"
+    "*.{js,ts,vue}": [
+      "eslint --cache",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@mekari/pixel": "^0.7.14",
