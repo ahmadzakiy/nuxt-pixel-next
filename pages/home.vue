@@ -1,7 +1,6 @@
 <template>
   <PixelWrapper>
     <mp-flex h="100vh" bg="red.50" direction="column" align-items="center" justify-content="center">
-      <mp-button mb="24" @click="type = 'draft'">Show Age Filter</mp-button>
       <FilterPopover id="filter-age" title="Filter Age" content="Age" :list="30" :type="type" />
     </mp-flex>
   </PixelWrapper>
